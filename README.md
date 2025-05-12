@@ -48,3 +48,39 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+## UI Layer:
+
+- app/\_layout: file based routing in expo, main layout file
+- app/index: main UI file
+- components: Reusable UI components
+
+## State Layer:
+
+- hooks: useWeatherData hook to handle weather data
+
+## Data layers
+
+weatherService:
+
+- fetch data from external weather API
+- Handles API requests and responses
+  asyncStorage
+- Persists cached weather data
+- stores default/recent locations
+
+## Data Flow
+
+1. App starts with a default location. E.g: Dhaka
+2. User can search and select a new location
+3. useWeatherData hook manages:
+   - fetching weather data
+   - caching results
+   - handling network connectivity
+4. UI components render retrieved data
+
+## Potential Enhancements:
+
+1. Add more robust error handling
+2. Implement geolocation for current location
+3. Enhance caching mechanisms
