@@ -35,25 +35,29 @@ npm run reset-project
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-
 ## UI Layer:
 
 - app/\_layout: file based routing in expo, main layout file
 - app/index: main UI file
 - components: Reusable UI components
+  - SearchBar
+    - Search input to search for location
+    - Select location to display data in UI components
+  - LocationHeader render following data:
+    - Current location
+    - Current date
+  - CurrentWeather render following data:
+    - Current condition text
+    - Current temperature in celcius
+    - Current feels like
+  - WeatherStats
+    - Current wind
+    - Current humidity
+    - Current day's sunrise
+  - Daily Forecast
+    - Icon represents: Condition of the day
+    - Day name
+    - Temperature of that day
 
 ## State Layer:
 
